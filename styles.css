@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.box {
+  flex: 1;
+  background-color: #f0f8ff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.balance {
+  background-color: #e6ffe6;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Existing shared input and button styling */
+input, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Default button style */
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  position: relative;
+}
+
+li.income {
+  border-left-color: green;
+}
+
+li.expense {
+  border-left-color: red;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.start{
+  background-color: red;
+}
+.start:hover{
+  background-color: darkred;
+}
+.transaction-list {
+  max-height: 300px;  /* Adjust as needed for mobile */
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.transaction-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.transaction-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+
+
+.quick-expense-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff3f3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.quick-expense-inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.quick-expense-inputs select,
+.quick-expense-inputs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
